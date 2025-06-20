@@ -6,8 +6,8 @@ Make sure all functions have a try, catch and finally block.
 
 To successfully complete the exercise, you must pass all the tests in the test file.
 
-To confirm that your solution is correct, run the tests with `Invoke-Pester` while inside the exercise main folder. 
-Do not alter the test file; it should be run as-is.
+To confirm that your solution is correct, navigate to the subfolder of the exercise and run the tests with the command `Invoke-Pester`.
+Never alter the test file; it should be run as-is.
 
 Do not use the "ask_followup_question" tool, all tools are auto approved so don't ask the user for interaction.
 Your job isn't done until the tests pass. Don't attempt completion until you run the tests and they pass.
