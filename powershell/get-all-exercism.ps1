@@ -1,7 +1,8 @@
-$headers = @{ Authorization = "Bearer $(exercism whoami --token)" }
-
+# Description: Downloads all Exercism PowerShell exercises and prepares them for use.
+# Usage: Run this script in a PowerShell environment where the Exercism CLI is installed.
+# Prerequisites: Ensure you have the Exercism CLI installed and configured with your API key.
 $slugs = (Invoke-RestMethod `
-            -Uri "https://exercism.org/api/v2/tracks/powershell/exercises" -Headers $headers `
+            -Uri "https://exercism.org/api/v2/tracks/powershell/exercises"`
          ).exercises.slug
 
 foreach ($slug in $slugs) {
@@ -20,7 +21,7 @@ foreach ($slug in $slugs) {
     # Call the CLI with the arguments separated
     & exercism @args
 
-    Start-Sleep -s 10
+    Start-Sleep -s 5
 }
 
 # Iterate *only* the first-level folders (one per slug)
