@@ -5,6 +5,12 @@ $slugs = (Invoke-RestMethod `
          ).exercises.slug
 
 foreach ($slug in $slugs) {
+    # --- skip if the exercise folder is already there ---
+    if (Test-Path -LiteralPath $slug -PathType Container) {
+        Write-Host "✓  $slug   (already downloaded – skipping)" -ForegroundColor Yellow
+        continue
+    }
+
     # Build an array of arguments
     $args = @('download', '--track=powershell', "--exercise=$slug")
 
@@ -13,6 +19,8 @@ foreach ($slug in $slugs) {
 
     # Call the CLI with the arguments separated
     & exercism @args
+
+    Start-Sleep -s 5
 }
 
 # Iterate *only* the first-level folders (one per slug)
