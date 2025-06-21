@@ -13,13 +13,13 @@ foreach ($slug in $slugs) {
     }
 
     # Build an array of arguments
-    $args = @('download', '--track=powershell', "--exercise=$slug")
+    $argParams = @('download', '--track=powershell', "--exercise=$slug")
 
     # Show the exact command for your records
-    Write-Host "exercism $($args -join ' ')"
+    Write-Host "exercism $($argParams -join ' ')"
 
     # Call the CLI with the arguments separated
-    & exercism @args
+    & exercism @argParams
 
     Start-Sleep -s 5
 }
