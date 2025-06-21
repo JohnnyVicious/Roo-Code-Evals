@@ -11,6 +11,7 @@ All exercises in this repository are sourced from the following Exercism languag
 - [JavaScript Track](https://github.com/exercism/javascript)
 - [Python Track](https://github.com/exercism/python)
 - [Rust Track](https://github.com/exercism/rust)
+- [Powershell Track](https://github.com/exercism/powershell)
 
 All exercise content is copyright © [Exercism](https://exercism.org). These exercises are used in accordance with Exercism's open source licenses.
 
