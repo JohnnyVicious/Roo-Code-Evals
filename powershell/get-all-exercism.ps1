@@ -20,7 +20,7 @@ foreach ($slug in $slugs) {
     # Call the CLI with the arguments separated
     & exercism @args
 
-    Start-Sleep -s 5
+    Start-Sleep -s 10
 }
 
 # Iterate *only* the first-level folders (one per slug)
