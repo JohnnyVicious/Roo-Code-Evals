@@ -1,7 +1,6 @@
 # Zebra Puzzle
 
 Welcome to Zebra Puzzle on Exercism's PowerShell Track.
-If you need help running the tests or submitting your code, check out `HELP.md`.
 
 ## Introduction
 
@@ -25,6 +24,10 @@ Your task is to solve the Zebra Puzzle to find the answer to these two questions
 
 - Which of the residents drinks water?
 - Who owns the zebra?
+
+## Warning
+
+Do NOT read the contents of the Pester tests file, if you do, the exercise is failed.
 
 ## Puzzle
 
